@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Single Product </title>
+    <link rel="stylesheet" href="cart.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ancizar+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+<body>
+ <div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <a href="/index.html"><img src="/images/logo-kivan B.png" width="67px"></a>
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/product/products.html">products</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="/Account/account.html">Account</a></li>
+            </ul>
+        </nav>
+        <a href="/product cart/cart.html"><img src="/images/cart.png" width="30px" height="30px"></a>
+        <img src="/images/menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+ </div>
+
+<!-- cart items  -->
+
+<div class="small-container cart-page">
+
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                   <a href="/product details/product 1/sneakers 10/sneakers 10.html"> <img src="/product details/product 1/sneakers 10/sneakers 10.jpeg"></a>
+                    <div>
+                        <p>Nike Dunk QS SB x Travis Scott Cactus Jack</p>
+                        <small> Price :$2999.00</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>$2999.00</td>
+        </tr>
+         <tr>
+            <td>
+                <div class="cart-info">
+                   <a href="/product details/product 2/pant 1/pant 1.html"> <img src="/product details/product 2/pant 1/pant 1.webp"></a>
+                    <div>
+                        <p>Jigga Wear Stripe Zip Cargo</p>
+                        <small> Price :$35.00</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>$35.00</td>
+        </tr>
+         <tr>
+            <td>
+                <div class="cart-info">
+                  <a href="/product details/product 3/Tshirt 14/Tshirt 14.html"> <img src="/product details/product 3/Tshirt 14/Tshirt 14.webp"></a>
+                    <div>
+                        <p>Printed T-Shirt</p>
+                        <small> Price :$42.50</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>$42.50</td>
+        </tr>
+    </table> 
+
+    <div class="total-price">
+        <table>
+            <tr>
+                <td>Subtotal</td>
+                <td>$3076.50</td>
+            </tr>
+            <tr>
+                <td>Tax</td>
+                <td>$50.00</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>$3126.50</td>
+            </tr>
+        </table>
+    </div>
+
+</div>
+
+
+
+
+
+
+<!--footer -->
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Dpwnload App for Android and ios mobile phone.</p>
+                <div class="app-logo">
+                    <img src="/images/play-store.png">
+                    <img src="/images/app-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+               <a href="/index.html"> <img src="/images/logo-kivan w.png"> </a>
+                 <p>Our Purpose Id To Sustainable Make the pleasure and Benefits of Sports Accessible to the Many</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links </h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3> Follow Us </h3>
+                <ul>
+                    <li><i class="fa-brands fa-facebook"> </i> Facebook</li>
+                    <li><i class="fa-brands fa-twitter"></i> Twitter</li>
+                    <li><i class="fa-brands fa-instagram"></i> Instagram</li>
+                    <li><i class="fa-brands fa-whatsapp"></i> Whatsapp</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copy-right"> <i class="fa-regular fa-copyright"></i></i>  Copy Right  2024 - SIMON </p>
+    </div>
+</div>
+
+
+
+
+
+
+<!-- js for toggle menu  -->
+
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px"
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+    {
+        MenuItems.style.maxHeight = "200px";
+    }
+    else{
+        MenuItems.style.maxHeight = "0px";
+    }
+    }
+</script>
+
+</body>
+</html>
